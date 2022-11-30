@@ -3,11 +3,11 @@
 Console.Clear();                            // Очистили окно терминала
 
 Console.SetCursorPosition(xa, ya);          // Нарисовали исходные три точки тркугольника
-Console.WriteLine("@");
+Console.WriteLine("+");
 Console.SetCursorPosition(xb, yb);
-Console.WriteLine("@");
+Console.WriteLine("+");
 Console.SetCursorPosition(xc, yc);
-Console.WriteLine("@");
+Console.WriteLine("+");
 
 int x = xa, y = xb;         // Выбираем исходный отрезок треугольника
 int count = 0;          // Счётчик числа повторений отрисовки новых точек
@@ -31,7 +31,7 @@ while (count < 10000)
         y = (y + yc) / 2;
     }
     Console.SetCursorPosition(x, y);
-    Console.WriteLine("@");
+    Console.WriteLine("+");
     count++;
 }
 
